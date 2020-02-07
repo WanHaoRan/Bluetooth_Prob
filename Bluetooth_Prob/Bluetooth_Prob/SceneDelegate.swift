@@ -21,11 +21,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let mymainUI = MyMainUI()
+        let updateCurrentLocation = UpdateCurrentLocation()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: mymainUI.environmentObject(UserData()))
+            //window.rootViewController = UIHostingController(rootView: updateCurrentLocation)
             self.window = window
             window.makeKeyAndVisible()
         }

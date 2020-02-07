@@ -23,7 +23,6 @@ struct MapView: UIViewRepresentable {
         view.setRegion(region, animated: true)
     }
     
-    
 }
 
 struct MapView_Previews: PreviewProvider {

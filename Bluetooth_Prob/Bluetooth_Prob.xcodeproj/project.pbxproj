@@ -11,6 +11,7 @@
 		25612EC323ED0AA70055F430 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612EC223ED0AA70055F430 /* UserData.swift */; };
 		25612EC623ED0DDC0055F430 /* LocationWithBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612EC523ED0DDC0055F430 /* LocationWithBluetooth.swift */; };
 		25612ECA23ED27550055F430 /* MyMainUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612EC923ED27550055F430 /* MyMainUI.swift */; };
+		25612ECC23ED56970055F430 /* UpdateCurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612ECB23ED56970055F430 /* UpdateCurrentLocation.swift */; };
 		25E80D0723EAB59D0078BD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E80D0623EAB59D0078BD1A /* AppDelegate.swift */; };
 		25E80D0923EAB59D0078BD1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E80D0823EAB59D0078BD1A /* SceneDelegate.swift */; };
 		25E80D0B23EAB59D0078BD1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E80D0A23EAB59D0078BD1A /* ContentView.swift */; };
@@ -43,6 +44,7 @@
 		25612EC223ED0AA70055F430 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		25612EC523ED0DDC0055F430 /* LocationWithBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWithBluetooth.swift; sourceTree = "<group>"; };
 		25612EC923ED27550055F430 /* MyMainUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainUI.swift; sourceTree = "<group>"; };
+		25612ECB23ED56970055F430 /* UpdateCurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCurrentLocation.swift; sourceTree = "<group>"; };
 		25E80D0323EAB59D0078BD1A /* Bluetooth_Prob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bluetooth_Prob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E80D0623EAB59D0078BD1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25E80D0823EAB59D0078BD1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				25E80D0A23EAB59D0078BD1A /* ContentView.swift */,
 				25612EC023ED055D0055F430 /* MapView.swift */,
 				25612EC923ED27550055F430 /* MyMainUI.swift */,
+				25612ECB23ED56970055F430 /* UpdateCurrentLocation.swift */,
 				25612EC223ED0AA70055F430 /* UserData.swift */,
 				25E80D0C23EAB5A00078BD1A /* Assets.xcassets */,
 				25E80D1123EAB5A00078BD1A /* LaunchScreen.storyboard */,
@@ -292,6 +295,7 @@
 				25612EC623ED0DDC0055F430 /* LocationWithBluetooth.swift in Sources */,
 				25E80D0923EAB59D0078BD1A /* SceneDelegate.swift in Sources */,
 				25612ECA23ED27550055F430 /* MyMainUI.swift in Sources */,
+				25612ECC23ED56970055F430 /* UpdateCurrentLocation.swift in Sources */,
 				25612EC323ED0AA70055F430 /* UserData.swift in Sources */,
 				25E80D0B23EAB59D0078BD1A /* ContentView.swift in Sources */,
 			);

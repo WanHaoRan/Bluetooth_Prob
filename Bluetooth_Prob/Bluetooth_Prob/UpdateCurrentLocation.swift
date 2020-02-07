@@ -6,16 +6,36 @@
 //  Copyright © 2020 浩然  万. All rights reserved.
 //
 
-import SwiftUI
+import UIKit
+import CoreLocation
 
-struct UpdateCurrentLocation: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class UpdateCurrentLocation: UIViewController{
+    let locationManager = CLLocationManager()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        getCurrentLocation()
+    }
+    
+    func getCurrentLocation() {
+        self.locationManager.requestAlwaysAuthorization()
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled(){
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
     }
 }
 
-struct UpdateCurrentLocation_Previews: PreviewProvider {
-    static var previews: some View {
-        UpdateCurrentLocation()
+extension UpdateCurrentLocation: CLLocationManagerDelegate{
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else {
+            return
+        }
+        print ("location = \(locValue.latitude) \(locValue.longitude)")
     }
 }
